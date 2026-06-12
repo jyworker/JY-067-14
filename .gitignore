@@ -1,33 +1,74 @@
-# maven ignore
+#==========================
+# Maven
+#==========================
 target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
 *.jar
 *.war
 *.zip
 *.tar
 *.tar.gz
 
-# eclipse ignore
+#==========================
+# Eclipse
+#==========================
 .settings/
 .project
 .classpath
+bin/
 
-# idea ignore
+#==========================
+# IntelliJ IDEA
+#==========================
 .idea/
 *.ipr
 *.iml
 *.iws
+.idea_modules/
 
-# temp ignore
+#==========================
+# VS Code
+#==========================
+.vscode/
+*.code-workspace
+
+#==========================
+# OS
+#==========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+#==========================
+# Temp / Backup
+#==========================
 *.log
 *.cache
 *.diff
 *.patch
 *.tmp
+*~
 *.java~
 *.properties~
 *.xml~
 
-# system ignore
-.DS_Store
-Thumbs.db
+#==========================
+# Build / Release
+#==========================
+/build/
+/dist/
+*.exe
 
+#==========================
+# Test output
+#==========================
+*.test
+*.test.js
+coverage/
+.nyc_output/
+
+pushed.txt

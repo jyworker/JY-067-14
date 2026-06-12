@@ -50,4 +50,8 @@ public class SijiaoSimilar implements IHanziSimilar {
         return 0;
     }
 
+    double calcScoreForTest(String codeOne, String codeTwo) {
+        return calcScore(codeOne, codeTwo);
+    }
+
 }

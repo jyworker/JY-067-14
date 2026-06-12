@@ -51,6 +51,15 @@ public final class HanziSimilars {
     }
 
     /**
+     * 四角编码模糊匹配（基于 Smith-Waterman 局部对齐算法）
+     * @return 实现
+     * @since 1.4.0
+     */
+    public static IHanziSimilar sijiaoFuzzy() {
+        return new SijiaoFuzzySimilar();
+    }
+
+    /**
      * 拆字
      * @return 实现
      * @since 1.1.0
